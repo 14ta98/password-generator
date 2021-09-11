@@ -2,7 +2,7 @@
   <div>{{ makeRandom() }}</div>
 </template>
 
-<script>  
+<script>
 import randomatic from "randomatic";
 export default {
   props: {
@@ -17,12 +17,13 @@ export default {
   },
   methods: {
     makeRandom() {
-      var arr = [];
-      for (let i = 0; i < 8; i++) {
-        arr.push(randomatic(this.pattern, this.length));
-      }
-      return arr;
+      return randomatic(this.pattern, this.length);
     },
   },
 };
+}
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
