@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "firebase": "^9.0.2",
+    "random": "^3.0.6",
     "randomatic": "^3.1.1"
   },
   "devDependencies": {
